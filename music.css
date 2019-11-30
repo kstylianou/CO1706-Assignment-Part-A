@@ -1,0 +1,240 @@
+
+.imgText{
+    position: relative;
+    text-align: center;
+
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.52); /* Black w/opacity/see-through*/
+    border: 3px solid #f1f1f1;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+#musicSelection{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.appText{
+    margin-top: 50px;
+    padding: 0 16px;
+}
+
+.headphones{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right:30px;
+}
+.man{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.guitar{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right:30px;
+}
+.bnW{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.people{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.musician{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+
+.appH2{
+    text-decoration: underline;
+    margin-left: 50px;
+    color: white;
+}
+.musicBar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.musicBar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.musicBar a:hover {
+   text-decoration: underline;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DB53FB;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.musicBar .search-container {
+    float: right;
+}
+
+.musicBar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.musicBar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #DB53FB;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.musicBar .search-container button:hover {
+    background: rgba(223, 84, 255, 0.88);
+}
+
+@media screen and (max-width: 1000px )and (min-width: 800px) {
+    #musicSelection{
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+
+    }
+    .musicBar a {
+        float: none;
+        margin:0;
+    }
+    .centered {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+    .leftBox{
+        float:left;
+        width:100%;
+        height:auto;
+        border: 0;
+        padding: 0;
+
+    }
+    .rightBox{
+        float:right;
+        width:100%;
+        height:auto;
+        padding:0 0 20px;
+    }
+    .appH2{
+        text-align: center;
+        margin:10px 0 ;
+    }
+}
+@media screen and (max-width: 800px) {
+    #musicSelection{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .centered{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 7px;
+    }
+    .musicBar a {
+        float: none;
+        margin:0;
+    }
+    .leftBox{
+        float:left;
+        width:100%;
+        height:auto;
+        border: 0;
+        padding: 0;
+
+    }
+    .rightBox{
+        float:right;
+        width:100%;
+        height:auto;
+        padding:0 0 20px;
+    }
+    .appH2{
+        text-align: center;
+        margin:10px 0 ;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .musicBar .search-container {
+        float: right;
+    }
+    .musicBar a, .musicBar input[type=text], .musicBar .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .musicBar input[type=text] {
+        border: 1px solid #ccc;
+    }
+}

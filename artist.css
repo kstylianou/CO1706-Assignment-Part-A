@@ -1,0 +1,218 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+#logo {
+    height: 25px;
+    vertical-align: middle;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DB53FB;
+
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top:10px;
+
+}
+
+ul.nav li a:hover:not(.active) {
+    text-decoration: underline;
+}
+ul.nav li {
+    float: left;
+}
+ul.nav li a.active {
+    text-decoration: underline;
+}
+@media screen and (max-width: 400px) {
+    ul.nav li.right,
+    ul.nav li {
+        float: none;
+    }
+    #logo{
+        display: none;
+    }
+}
+#image{
+    width: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.imgText{
+    position: relative;
+    text-align: center;
+
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.52); /* Black w/opacity/see-through*/
+    border: 3px solid #f1f1f1;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.artist{
+    margin: 50px 150px 100px 150px;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+}
+.artist p, h3, h1, h4{
+    padding: 0 30px 0 30px;
+}
+.artist p{
+    text-align: justify;
+    font-size: 18px;
+}
+#featuredArtist{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column p{
+    text-align: center;
+}
+.column img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.column img:hover {
+    box-shadow: 0 0 5px 5px rgba(219, 83, 251, 0.5);
+}
+#album{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#natg{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#ludo{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#de{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#raai{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#es{
+    width: 150px;
+    height: 100px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+@media screen and (max-width: 1000px )and (min-width: 800px) {
+    #featuredArtist {
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    .column img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .centered {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+    .artist{
+        margin:0;
+    }
+    .artist{
+        margin: 50px 50px 100px 50px;
+        padding: 10px 10px 10px 10px;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    #featuredArtist {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .column {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+    .column img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .centered {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 7px;
+    }
+    .artist{
+        margin: 50px 8px 100px 8px;
+        padding: 5px 5px 5px 5px;
+    }
+}

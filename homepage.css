@@ -1,0 +1,554 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+#logo {
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+.navbar
+{
+    background-color: #868686;
+    display: flex;
+    justify-content: center;
+}
+.navbar a
+{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 28px 28px;
+}
+.navbar a:hover
+{
+    background-color: #bf49de;
+
+}
+#toggle
+{
+    display: none;
+}
+.togglearea
+{
+    background-color: #bf49de;
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+.togglearea label
+{
+    background-color: white;
+    height: 45px;
+    width: 50px;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.togglearea label span
+{
+    background-color: black;
+    height: 4px;
+    width: 70%;
+    margin: 2px 0;
+}
+.togglearea
+{
+    display: none;
+}
+
+#image{
+    width: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.imgText{
+    position: relative;
+    text-align: center;
+
+
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.52); /* Black w/opacity/see-through*/
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 30px;
+}
+#welcome{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+#plansBottom{
+    background-color: #DB53FB;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.appText{
+    margin-top: 50px;
+    padding: 0 16px;
+}
+.leftBox{
+    float:left;
+    width:50%;
+    height:250px;
+    padding-right:50px;
+    padding-left:50px;
+
+
+}
+.leftBox p{
+    font-size: 21px;
+
+}
+#headphones{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right:30px;
+}
+.middleBox{
+    float:left;
+    width:50%;
+    height:250px;
+    padding-right:50px;
+    padding-left:50px;
+}
+#man{
+    height: 120px;
+    width: 140px;
+    float:right;
+    margin-left: 30px;
+}
+#musician{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.middleBox p {
+    font-size: 21px;
+}
+.rightBox{
+    float:right;
+    width:50%;
+    height:250px;
+    padding-right:50px;
+    padding-left:50px;
+}
+.rightBox p{
+    font-size: 21px;
+}
+#bnW{
+    height: 120px;
+    width: 140px;
+    float:right;
+    margin-left: 30px;
+}
+.appH2{
+    text-align: center;
+}
+#goldLevel{
+    background-color: gold;
+    width:100%;
+}
+#silverLevel{
+    background-color: #a7a7a7;
+    width:100%;
+}
+#platinumLevel{
+     background-color:  #E5E4E2;
+     width:100%;
+ }
+#familyPack{
+    background-color: #50fbda;
+    width:100%;
+}
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    margin-top:50px;
+}
+
+#image{
+    width: 100%;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#musicSelection{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.appText{
+    margin-top: 50px;
+    padding: 0 16px;
+}
+
+
+.leftBox1{
+    float:left;
+    width:50%;
+    height:150px;
+    padding-right:50px;
+    padding-left:50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+
+
+}
+.leftBox1 p{
+    font-size: 21px;
+    color: black;
+
+}
+.headphones{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right:30px;
+}
+.man{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.guitar{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right:30px;
+}
+.bnW{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.people{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.musician{
+    height: 120px;
+    width: 140px;
+    float:left;
+    margin-right: 30px;
+}
+.rightBox1{
+    float:right;
+    width:50%;
+    height:150px;
+    padding-right:50px;
+    padding-left:50px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+.rightBox1 p{
+    font-size: 21px;
+    color: black;
+}
+.appH2{
+    text-decoration: underline;
+    margin-left: 50px;
+    font-size: 50px;
+    color: black;
+}
+.musicBar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.musicBar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.musicBar a:hover {
+    text-decoration: underline;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DB53FB;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.musicBar .search-container {
+    float: right;
+}
+
+.musicBar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 30px;
+    border: none;
+}
+
+.musicBar .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #DB53FB;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.musicBar .search-container button:hover {
+    background: rgba(223, 84, 255, 0.88);
+}
+@media screen and (max-width: 1000px)
+{
+    .navbar
+    {
+        flex-direction: column;
+        display: none;
+    }
+    #toggle:checked + .navbar
+    {
+        display: flex;
+    }
+    .togglearea
+    {
+        display: flex;
+    }
+    #logo{
+        display: none;
+    }
+    .logo1{
+       float: left;
+        margin-right: auto;
+    }
+    #logo1{
+        height: 60px;
+    }
+    .column {
+        width: 80%;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #welcome {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+
+    }
+
+    .bottom-left {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .leftBox {
+        float: left;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+
+    .middleBox {
+        float: left;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+    .rightBox {
+        float: right;
+        width: 80%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 0;
+    }
+
+    .centered {
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+    #musicSelection{
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .musicBar a {
+        float: none;
+        margin:0;
+    }
+    .leftBox1{
+        float:left;
+        width:100%;
+        height:auto;
+        border: 0;
+        padding: 0;
+
+    }
+    .rightBox1{
+        float:right;
+        width:100%;
+        height:auto;
+        padding:0 0 20px;
+    }
+    .appH2{
+        text-align: center;
+        margin:10px 0 ;
+    }
+    .musicBar .search-container {
+        float: right;
+    }
+    .musicBar a, .musicBar input[type=text], .musicBar .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .musicBar input[type=text] {
+        border: 1px solid #ccc;
+    }
+    .playButton{
+        height: 50px;
+        float: right;
+        margin: 40px 40px 0 0;
+    }
+}
+
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.row{
+    margin-bottom: 50px;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    background-color: #DB53FB;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #b146cb;
+}
+p{
+    font-size: 15px;
+}
