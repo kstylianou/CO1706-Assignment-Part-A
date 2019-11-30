@@ -78,98 +78,11 @@ ul.nav li a.active {
     padding-left: 30px;
     padding-bottom: 10px;
 }
-.artist{
-    margin: 50px 150px 100px 150px;
-    border: 1px solid black;
-    padding: 20px 20px 20px 20px;
-}
-.artist p, h3, h1, h4{
-    padding: 0 30px 0 30px;
-}
-.artist p{
-    text-align: justify;
-    font-size: 18px;
-}
-#featuredArtist{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
 
-
-/* Clearfix (clear floats) */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.column p{
-    text-align: center;
-}
-.column img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.column img:hover {
-    box-shadow: 0 0 5px 5px rgba(219, 83, 251, 0.5);
-}
-#album{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
-#natg{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
-#ludo{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
-#de{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
-#raai{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
-#es{
-    width: 150px;
-    height: 100px;
-    border: 3px solid #030303;
-    border-radius: 4px;
-}
 @media screen and (max-width: 1000px )and (min-width: 800px) {
-    #featuredArtist {
-        text-align: center;
-        font-size: 35px;
-        font-weight: bold;
-    }
-    .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
-    }
-    .column img{
+
+
+    .column1 img{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -190,29 +103,11 @@ ul.nav li a.active {
 
 }
 @media screen and (max-width: 800px) {
-    #featuredArtist {
-        text-align: center;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .column {
-        float: left;
-        width: 50%;
-        padding: 5px;
-    }
-    .column img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
+
     .centered {
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 7px;
     }
-    .artist{
-        margin: 50px 8px 100px 8px;
-        padding: 5px 5px 5px 5px;
-    }
+
 }

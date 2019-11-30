@@ -17,7 +17,7 @@ body{
 
 .navbar
 {
-    background-color: #868686;
+    background-color: #333;
     display: flex;
     justify-content: center;
 }
@@ -252,6 +252,9 @@ body{
     color: black;
 
 }
+.active{
+    background-color: #bf49de;
+}
 .headphones{
     height: 120px;
     width: 140px;
@@ -387,6 +390,88 @@ body{
 .musicBar .search-container button:hover {
     background: rgba(223, 84, 255, 0.88);
 }
+
+.artist{
+    margin: 50px 150px 100px 150px;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+}
+.artist p, h3, h1, h4{
+    padding: 0 30px 0 30px;
+}
+.artist p{
+    text-align: justify;
+    font-size: 18px;
+}
+#featuredArtist{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+.row1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column1 p{
+    text-align: center;
+}
+.column1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.column1 img:hover {
+    box-shadow: 0 0 5px 5px rgba(219, 83, 251, 0.5);
+}
+#album{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#natg{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#ludo{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#de{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#raai{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+#es{
+    width: 200px;
+    height: 150px;
+    border: 3px solid #030303;
+    border-radius: 4px;
+}
+
 @media screen and (max-width: 1000px)
 {
     .navbar
@@ -511,6 +596,27 @@ body{
         height: 50px;
         float: right;
         margin: 40px 40px 0 0;
+    }
+    #featuredArtist {
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .column1 {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    .column1 img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .artist{
+        margin: 50px 8px 100px 8px;
+        padding: 5px 5px 5px 5px;
     }
 }
 
