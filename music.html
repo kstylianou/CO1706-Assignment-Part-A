@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <title>Music Selection</title>
     <link rel="stylesheet"  href="homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- for the arrow in dropdown list-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!-- Navigation bar with dropdown using the "humburger" icon when is below 1000px-->
     <div class="togglearea">
         <div class ="logo1">
         <a href="index.html"><img id = "logo1" src = "images/pngfind.com-wave-lines-png-62652091.png" alt = "Home" ></a>
@@ -18,13 +19,17 @@
             <span></span>
         </label>
     </div>
+
+<!--Links that take you to other pages in the navigation bar-->
     <input type="checkbox" id="toggle">
     <div class="navbar">
         <a href="index.html">Home</a>
         <a class="active" href="music.html">Music Selection </a>
         <a href="artist.html">Featured Artist </a>
+        <a href="ABOUT.html">ABOUT</a>
     </div>
 
+<!--Image after navigation bar showing page name to the users-->
     <div class="imgText">
         <img id = "image" src="images/audience-1867754_19203.jpg" alt ="audience">
         <div class="centered">
@@ -33,6 +38,7 @@
         </div>
     </div>
 
+<!-- Music navigation bar that the user can choose genre and using id and a href it take the to the genre it choose-->
     <div class="musicBar">
         <div class="dropdown">
             <button class="dropbtn">GENRE
@@ -49,56 +55,59 @@
                 <a href="#metal">METAL</a>
             </div>
         </div>
+
+        <!-- Search box tha user can search for album, music and artists-->
         <div class="search-container">
             <input type="text" placeholder="Search.." name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
         </div>
     </div>
 
+<!-- User can browse available music. Users are able  of browsing by genre. -->
     <!-- RAP -->
     <div class = "appText">
-        <a id = "rap"></a>
-        <h2 class = "appH2">RAP</h2>
-        <div class = "leftBox1">
-            <img class = "man" src="images/man-1845432_1920.jpg" alt="man" >
-            <img class = "playButton" src="images/play-button.png" alt="Play Button">
-            <h1><strong>Artist:</strong> Disoriented Scoundrel</h1>
-            <h1><strong>Album:</strong> Chap In The Recess</h1>
+        <h3 class = "appH2">RAP</h3>
+        <div id = "rap">
+            <div class = "leftBox1">
+                <img class = "man" src="images/man-1845432_1920.jpg" alt="man" >
+                <img class = "playButton" src="images/play-button.png" alt="Play Button">
+                <h1><strong>Artist:</strong> Disoriented Scoundrel</h1>
+                <h1><strong>Album:</strong> Chap In The Recess</h1>
+            </div>
 
-        </div>
-
-        <div class ="rightBox1">
-            <img class = "headphones" src="images/headphone-1868612_1280.jpg" alt="headphone" >
-            <img class = "playButton" src="images/play-button.png" alt="Play Button">
-            <h1><strong>Artist:</strong> Skittlz</h1>
-            <h1><strong>Album:</strong> The True Thin Ghosty</h1>
-
+            <div class ="rightBox1">
+                <img class = "headphones" src="images/headphone-1868612_1280.jpg" alt="headphone" >
+                <img class = "playButton" src="images/play-button.png" alt="Play Button">
+                <h1><strong>Artist:</strong> Skittlz</h1>
+                <h1><strong>Album:</strong> The True Thin Ghosty</h1>
+            </div>
         </div>
     </div>
 
     <!-- Chart -->
     <div class = "appText">
-        <a id = "chart"></a>
-        <h2 class = "appH2">Chart</h2>
-        <div class = "leftBox1">
-            <img class = "guitar" src="images/guitar-869217_1920.jpg" alt="guitar" >
-            <img class = "playButton" src="images/play-button.png" alt="Play Button">
-            <h1><strong>Artist:</strong> Slow Hatter</h1>
-            <h1><strong>Album:</strong> Not Scared</h1>
-        </div>
+        <div  id = "chart">
+        <h3 class = "appH2">Chart</h3>
+            <div class = "leftBox1">
+                <img class = "guitar" src="images/guitar-869217_1920.jpg" alt="guitar" >
+                <img class = "playButton" src="images/play-button.png" alt="Play Button">
+                <h1><strong>Artist:</strong> Slow Hatter</h1>
+                <h1><strong>Album:</strong> Not Scared</h1>
+            </div>
 
-        <div class ="rightBox1">
-            <img class = "bnW" src="images/black-and-white-2564630_1920.jpg" alt="Black and White" >
-            <img class = "playButton" src="images/play-button.png" alt="Play Button">
-            <h1><strong>Artist:</strong> Mallard</h1>
-            <h1><strong>Album:</strong> Models and Controllers</h1>
+            <div class ="rightBox1">
+                <img class = "bnW" src="images/black-and-white-2564630_1920.jpg" alt="Black and White" >
+                <img class = "playButton" src="images/play-button.png" alt="Play Button">
+                <h1><strong>Artist:</strong> Mallard</h1>
+                <h1><strong>Album:</strong> Models and Controllers</h1>
+            </div>
         </div>
     </div>
 
     <!-- RNB -->
     <div class = "appText">
-        <a id = "rnb"></a>
         <h2 class = "appH2">R&B</h2>
+        <a class="expando" id = "rnb"></a>
         <div class = "leftBox1">
             <img class = "man" src="images/man-1845432_1920.jpg" alt="man" >
             <img class = "playButton" src="images/play-button.png" alt="Play Button">
@@ -208,5 +217,6 @@
             <h1><strong>Album:</strong> Bëlöw Utöpiä</h1>
         </div>
     </div>
+<p id ="copyright"><small>Copyright 2019 SOUNDWAVE</small></p>
 </body>
 </html>
